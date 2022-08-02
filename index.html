@@ -1,11 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ronin Web-Store</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+      integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body></body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <header>
+      <!-- NAV -->
+      <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
+          <!-- NAV LOGO -->
+          <a class="navbar-brand" href="#">
+            <img src="" alt="" class="img-fluid" />
+            Ronin Web-Store
+          </a>
+          <div class="d-flex mx-md-auto">
+            <!-- NAV SEARCH -->
+            <form class="d-flex">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-secondary" type="submit">Buscar</button>
+            </form>
+            <!-- LOGIN -->
+            <button class="btn btn-secondary ms-3">Login</button>
+          </div>
+          <!-- MENU BTN -->
+          <button
+          class="navbar-toggler hamburger hamburger--spin"
+          type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-label="Botón menú">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+          </button>
+          <!-- NAV MENU -->
+          <div class="collapse navbar-collapse flex-grow-0 text-center" id="navbarMenu">
+           <!-- LINKS -->
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link" href="#inicio">Inicio</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#productos">Productos</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#contacto">Contacto</a>
+               </li>
+            </ul>
+             <!-- SHOP ICON -->
+            <div class="shopping-icon">
+               <a href="#"><img src="./assets/shop-cart.svg" alt=""></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- END NAV -->
+      <!-- HERO -->
+      <div class="home mt-5 overflow-hidden" id="inicio">
+        <div id="carouselHome" class="carousel slide carousel-fade" data-bs-touch="true" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Oferta 1"></button>
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Oferta 2"></button>
+            <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Oferta 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="home-banner home-banner1">
+                <div class="home-banner__text">
+                  <h1>Promociones de Invierno</h1>
+                  <h2>Productos seleccionados con 33% de descuento</h2>
+                  <button class="btn btn-primary">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="home-banner home-banner2">
+                <div class="home-banner__text">
+                  <h1>Promociones de Verano</h1>
+                  <h2>Productos seleccionados con 25% de descuento</h2>
+                  <button class="btn btn-primary">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="home-banner home-banner3">
+                <div class="home-banner__text">
+                  <h1>Promociones de Otoño</h1>
+                  <h2>Productos seleccionados con 50% de descuento</h2>
+                  <button class="btn btn-primary">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      <!-- END HERO -->
+    </header>
+    <main>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+    <footer></footer>
+
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      // On click
+      hamburger.addEventListener("click", function () {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        // Do something else, like open/close menu
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>

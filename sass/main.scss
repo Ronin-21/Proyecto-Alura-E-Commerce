@@ -1,1 +1,31 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+  color: #fff;
+}
+
+.navbar-toggler {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.home-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-banner1 {
+  background-image: url(../assets/banner/banner1.jpg);
+}
+.home-banner2 {
+  background-image: url(../assets/banner/banner2.jpg);
+}
+.home-banner3 {
+  background-image: url(../assets/banner/banner3.jpg);
+}
