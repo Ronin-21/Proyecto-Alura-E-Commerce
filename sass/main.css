@@ -10984,12 +10984,17 @@ body {
   right: 0;
   bottom: 0;
   background-color: #444;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: -1;
 }
 
-.card-central img {
-  max-height: 275px;
-  -o-object-fit: cover;
-     object-fit: cover;
+@media screen and (min-width: 1024px) {
+  .card-central img {
+    height: 190px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .card-central img {
+    height: 275px;
+  }
 }/*# sourceMappingURL=main.css.map */
