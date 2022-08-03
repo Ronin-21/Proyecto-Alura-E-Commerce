@@ -10943,13 +10943,53 @@ body {
 }
 
 .home-banner1 {
-  background-image: url(../assets/banner/banner1.jpg);
+  background-image: url(../assets/img/banner/banner1.jpg);
 }
 
 .home-banner2 {
-  background-image: url(../assets/banner/banner2.jpg);
+  background-image: url(../assets/img/banner/banner2.jpg);
 }
 
 .home-banner3 {
-  background-image: url(../assets/banner/banner3.jpg);
+  background-image: url(../assets/img/banner/banner3.png);
+}
+
+.offers .card {
+  overflow: hidden;
+  position: relative;
+}
+.offers .card img {
+  transition: transform 0.8s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.offers .card:hover img {
+  transform: scale(1.2);
+}
+.offers .card .card-img-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.offers .card .card-img-overlay::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #444;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.card-central img {
+  max-height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
