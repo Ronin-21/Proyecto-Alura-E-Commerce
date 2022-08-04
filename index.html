@@ -20,9 +20,9 @@
       <nav class="navbar navbar-expand-lg bg-primary fixed-top">
         <div class="container-fluid d-flex justify-content-between">
           <!-- NAV LOGO -->
-          <a class="navbar-brand" href="#">
-            <img src="" alt="" class="img-fluid" />
-            Ronin Web-Store
+          <a class="navbar-brand text-center p-0" href="#">
+            <img src="./assets/img/logo.png" alt="logo" class="logo" />
+            <h1 class="fs-4">Ronin Web-Store</h1>
           </a>
           <div class="d-flex mx-md-auto">
             <!-- NAV SEARCH -->
@@ -57,6 +57,9 @@
                  <a class="nav-link" href="#productos">Productos</a>
                </li>
                <li class="nav-item">
+                 <a class="nav-link" href="#destacados">Destacados</a>
+               </li>
+               <li class="nav-item">
                  <a class="nav-link" href="#sobre-nosotros">Sobre nosotros</a>
                </li>
                <li class="nav-item">
@@ -79,12 +82,12 @@
             <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Oferta 2"></button>
             <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Oferta 3"></button>
           </div>
-          <div class="carousel-inner">
+          <div class="carousel-inner text-white">
             <div class="carousel-item active">
               <div class="home-banner home-banner1">
                 <div class="home-banner__text">
-                  <h1>Promociones de Invierno</h1>
-                  <h2>Productos seleccionados con 33% de descuento</h2>
+                  <h2>Promociones de Invierno</h2>
+                  <h3>Productos seleccionados con 33% de descuento</h3>
                   <button class="btn btn-primary">Agregar al carrito</button>
                 </div>
               </div>
@@ -92,8 +95,8 @@
             <div class="carousel-item">
               <div class="home-banner home-banner2">
                 <div class="home-banner__text">
-                  <h1>Promociones de Verano</h1>
-                  <h2>Productos seleccionados con 25% de descuento</h2>
+                  <h2>Promociones de Verano</h2>
+                  <h3>Productos seleccionados con 25% de descuento</h3>
                   <button class="btn btn-primary">Agregar al carrito</button>
                 </div>
               </div>
@@ -101,8 +104,8 @@
             <div class="carousel-item">
               <div class="home-banner home-banner3">
                 <div class="home-banner__text">
-                  <h1>Promociones de Otoño</h1>
-                  <h2>Productos seleccionados con 50% de descuento</h2>
+                  <h2>Promociones de Otoño</h2>
+                  <h3>Productos seleccionados con 50% de descuento</h3>
                   <button class="btn btn-primary">Agregar al carrito</button>
                 </div>
               </div>
@@ -117,6 +120,7 @@
             <span class="visually-hidden">Siguiente</span>
           </button>
         </div>
+      </div>
       <!-- END HERO -->
     </header>
     <main>
@@ -172,9 +176,458 @@
         </div>
       </section>
       <!-- END OFFSALE SECTION -->
-      <section></section>
-      <section></section>
-      <section></section>
+      <!-- PRODUCTS -->
+      <section id="productos">
+        <h2 class="display-3 fw-bold text-center text-uppercase">Productos</h2>
+        <!-- NARUTO SECTION -->
+        <section class="container mb-5">
+          <h3 class="h1 fw-bold text-center my-5">Naruto</h3>
+          <div class="card-group gap-5">
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/naruto/gaara2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/naruto/naruto2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/naruto/sasuke2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/naruto/kakashi2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- DRAGON BALL SECTION -->
+        <section class="container mb-5">
+          <h3 class="h1 fw-bold text-center my-5">Dragon Ball</h3>
+          <div class="card-group gap-5">
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/dragon-ball/cell2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/dragon-ball/gogeta2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/dragon-ball/gohan2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/dragon-ball/majin2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- ONE PIECE SECTION -->
+        <section class="container mb-5">
+          <h3 class="h1 fw-bold text-center my-5">One Piece</h3>
+          <div class="card-group gap-5">
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/one-piece/luffy2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/one-piece/hancock2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/one-piece/crocodile2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/one-piece/ace2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+      <!-- END PRODUCTS -->
+      <!-- BANNER OFFERS -->
+      <section class="my-5 py-5">
+        <div class="container-fluid px-0 d-flex banner">
+          <!-- BANNER INUYASHA -->
+          <article class="w-50 banner__container">
+            <div class="banner__img-container">
+              <img src="./assets/img/inuyasha/inuyasha3.jpg" alt="" class="w-100 banner__img">
+            </div>
+            <div class="banner__img-container">
+              <img src="./assets/img/inuyasha/seshomaru4.jpg" alt="" class="w-100 banner__img">
+            </div>
+            <div class="banner__info p-4 m-3 text-white text-center">
+              <h5 class="fs-2 fw-bold p-2">Collección Premium</h5>
+              <button class="btn btn-primary">Ver más</button>
+            </div>
+          </article>
+          <!-- BANNER KIMETSU -->
+          <article class="w-50 banner__container">
+            <div class="banner__img-container">
+              <img src="./assets/img/banner/kimetsu-banner3.jpg" alt="" class="w-100 banner__img">
+            </div>
+            <div class="banner__img-container">
+              <img src="./assets/img/banner/one-punch-banner1.jpg" alt="" class="w-100 banner__img">
+            </div>
+            <div class="banner__info p-4 m-3 text-white text-center">
+              <h5 class="fs-2 fw-bold p-2">Collección Premium</h5>
+              <button class="btn btn-primary">Ver más</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- END BANNER OFFERS -->
+      <!-- FEATURED PRODUCTS -->
+      <section id="destacados">
+        <h2 class="display-3 fw-bold text-center text-uppercase">Destacados</h2>
+        <!-- KIMETSU SECTION -->
+        <section class="container mb-5">
+          <h3 class="h1 fw-bold text-center my-5">Kimetsu no Yaiba</h3>
+          <div class="card-group gap-5">
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/kimetsu/rengoku4.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/kimetsu/shinobu2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/kimetsu/uzui2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/kimetsu/tomioka2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- MARVEL SECTION -->
+        <section class="container mb-5">
+          <h3 class="h1 fw-bold text-center my-5">Dragon Ball</h3>
+          <div class="card-group gap-5">
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/marvel/captain1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/marvel/hulk1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/marvel/iron-man1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="card" style="width: 18rem;">
+                <div class="card__img">
+                  <img src="./assets/img/marvel/thor1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Product name</h5>
+                  <p class="card-text fw-bold">$100.00</p>
+                  <div class="card__stars pb-3">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star-full.svg" alt="">
+                    <img src="./assets/svg/star.svg" alt="">
+                  </div>
+                  <a href="#" class="btn btn-primary align-self-end"><img src="./assets/svg/shop-cart.svg" alt=""></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+      <!-- END FEATURED PRODUCTS -->
     </main>
     <footer></footer>
 
