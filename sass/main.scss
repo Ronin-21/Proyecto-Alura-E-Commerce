@@ -1,15 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600&display=swap");
+
+$primary: #ffa71e;
+$secondary: #d8e1ff;
+$light: #ffff89;
+$dark: #853400;
+$font-family-base: "Poppins", sans-serif;
+$font-family-code: "Bebas Neue", cursive;
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+/* ------------------- */
+.login__body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* ------------------- */
 .logo {
-  max-width: 70px;
+  max-width: 60px;
 }
 
 .navbar-toggler {
   position: fixed;
   top: 0;
   right: 0;
+  outline: none;
 }
 
+.nav-link {
+  position: relative;
+  color: $black;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0.2rem;
+    left: 0.5rem;
+    width: 0;
+    height: 0.175rem;
+    background-color: $dark;
+    transition: all 0.3s ease;
+  }
+
+  &:hover::after {
+    width: calc(100% - 1rem);
+  }
+}
+
+.search__form {
+  position: relative;
+
+  .search__bar {
+    width: 20rem;
+  }
+
+  .search__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+/* --------- */
 .home-banner {
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,6 +85,7 @@
   background-image: url(../assets/img/banner/banner3.png);
 }
 
+/* ----------------- */
 .offers .card {
   overflow: hidden;
   position: relative;
@@ -70,6 +126,7 @@
   overflow: hidden;
 }
 
+/* ------------------- */
 .banner {
   height: 500px;
 
@@ -115,6 +172,12 @@
   }
 }
 
+/* -------------- */
+.footer__social-icons {
+  width: 2rem;
+}
+
+/* ------------------------ */
 @media screen and (min-width: 1024px) {
   .card-central img {
     height: 190px;
