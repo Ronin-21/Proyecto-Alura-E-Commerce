@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ronin Web-Store</title>
-    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
@@ -41,13 +41,13 @@
           <!-- MENU BTN -->
           <button
           class="navbar-toggler hamburger hamburger--spin"
-          type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-label="Botón menú">
+          type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-label="Botón menú">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
           </button>
           <!-- NAV MENU -->
-          <div class="collapse navbar-collapse flex-grow-0 text-center" id="navbarMenu">
+          <div class="collapse navbar-collapse flex-grow-0 text-center" id="navbar-menu">
            <!-- LINKS -->
             <ul class="navbar-nav">
                <li class="nav-item">
@@ -626,6 +626,12 @@
             </article>
           </div>
         </section>
+        <!-- NEW PRODUCTS SECTION -->
+        <section class="container mb-5 pb-5">
+          <h3 class="h1 fw-bold text-center my-5">Nuevos Productos</h3>
+          <div class="card-group gap-5" id="nuevos-productos">
+          </div>
+        </section>
       </section>
       <!-- END FEATURED PRODUCTS -->
       <!-- FORM SECTION -->
@@ -682,8 +688,7 @@
     </footer>
     <!-- END FOOTER -->
     <!-- SCRIPTS -->
-    <script src="./js/app.js" type="module"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
     <!-- END SCRIPTS -->
   </body>
 </html>

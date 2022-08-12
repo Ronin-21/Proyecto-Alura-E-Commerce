@@ -25,7 +25,9 @@ $font-family-code: "Bebas Neue", cursive;
   position: fixed;
   top: 0;
   right: 0;
-  outline: none;
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 .nav-link {

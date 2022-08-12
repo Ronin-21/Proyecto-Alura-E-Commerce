@@ -64,15 +64,13 @@
         <h2 class="h1 fw-bold text-center mb-5">Iniciar Sesión</h2>
         <!-- FORM -->
         <div class="form-contact__container w-25 p-5 pb-3 mx-auto rounded-4 shadow bg-white">
-            <div class="mb-3">
+            <form class="mb-3" id="login-form">
               <label for="text-input" class="form-label mt-2">Nombre de Usuario</label>
               <input type="text" class="form-control" id="text-input" placeholder="Ingrese su nombre">
-              <label for="email-input" class="form-label mt-2">Dirección de Email</label>
-              <input type="email" class="form-control" id="email-input" placeholder="juan@hotmail.com">
               <label for="password-input" class="form-label mt-2">Contraseña</label>
               <input type="password" class="form-control" id="password-input" placeholder="Ingrese su contraseña">
-              <button type="submit" class="btn btn-primary mt-3 w-100"><a href="admin.html" class="text-decoration-none text-black">Entrar</a></button>
-            </div>
+              <input type="submit" class="btn btn-primary mt-3 w-100" id="login-btn" value="Entrar"></input>
+            </form>
         </div>
       </section>
       <!-- END FORM SECTION -->
@@ -96,8 +94,7 @@
     </footer>
     <!-- END FOOTER -->
     <!-- SCRIPTS -->
-    <script src="./js/app.js" type="module"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/login.js" type="module"></script>
     <!-- END SCRIPTS -->
   </body>
 </html>

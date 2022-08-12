@@ -10940,7 +10940,9 @@ textarea.form-control-lg {
   position: fixed;
   top: 0;
   right: 0;
-  outline: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 .nav-link {
