@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+=======
+//import "/node_modules/bootstrap/dist/js/bootstrap.min.js";
+>>>>>>> f9c781240b92f2d3c096398dbc4ac11ed4b571a4
 
 /* CREATE NEW PRODUCTS CARDS */
 const $newProducts = document.querySelector("#nuevos-productos");
