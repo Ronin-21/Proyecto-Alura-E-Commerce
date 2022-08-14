@@ -11082,6 +11082,12 @@ textarea.form-control-lg {
   z-index: 5;
 }
 
+/* Admin Dashboard */
+.table-edit,
+.table-delete {
+  cursor: pointer;
+}
+
 /* -------------- */
 .footer__social-icons {
   width: 2rem;

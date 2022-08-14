@@ -61,22 +61,21 @@
     <main class="flex-grow-1 bg-secondary">
       <!-- FORM SECTION -->
       <section id="contacto" class="contact__section py-5">
-        <h2 class="h1 fw-bold text-center mb-5">Admin Dashboard</h2>
+        <h2 class="h1 fw-bold text-center mb-5">Agregar nuevo producto</h2>
         <!-- FORM -->
-        <div class="form-contact__container container-md p-5 pb-3 mx-auto rounded-4 shadow bg-white">
-          <table class="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Editar</th>
-              </tr>
-            </thead>
-            <tbody id="admin-table">
-            </tbody>
-          </table>
-          <button class="btn btn-primary mt-3"><a href="./create.html"rel="noopener noreferrer" class="text-black text-decoration-none">Agregar producto</a></button>
+        <div class="form-contact__container w-50 p-5 pb-3 mx-auto rounded-4 shadow bg-white">
+            <form class="mb-3" id="admin-form">
+              <label for="text-input" class="form-label mt-2">Categoría</label>
+              <input type="text" class="form-control" id="categoria-input" placeholder="Categoría del producto">
+              <label for="text-input" class="form-label mt-2">Nombre</label>
+              <input type="text" class="form-control" id="nombre-input" placeholder="Nombre del producto">
+              <label for="text-input" class="form-label mt-2">Precio</label>
+              <input type="text" class="form-control" id="precio-input" placeholder="Precio del producto">
+              <label for="file-input" class="form-label mt-2">Seleccione las imágenes</label>
+              <input class="form-control" type="file" id="file-input" accept=".jpg,.png,.webp">
+              <button type="submit" class="btn btn-primary mt-3 mx-auto">Agregar producto</button>
+              <button class="btn btn-primary mt-3 mx-auto"><a href="./admin.html" class="text-black text-decoration-none">Volver</a></button>
+            </form>
         </div>
       </section>
       <!-- END FORM SECTION -->
@@ -100,7 +99,7 @@
     </footer>
     <!-- END FOOTER -->
     <!-- SCRIPTS -->
-    <script src="./js/admin.js" type="module"></script>
+    <script src="./js/create-product.js" type="module"></script>
     <!-- END SCRIPTS -->
   </body>
 </html>

@@ -1,11 +1,10 @@
-//import "/node_modules/bootstrap/dist/js/bootstrap.min.js";
-import { $menuMobile } from "./index.js";
+import { hamburgerSpin } from "./hamburger.js";
 
-$menuMobile();
+hamburgerSpin();
 
 const admin = {
-  usuario: "admin",
-  contrasenna: "admin",
+  user: "admin",
+  password: "admin",
 };
 
 const $loginForm = document.querySelector("#login-form");
@@ -16,8 +15,7 @@ $loginForm.addEventListener("submit", (e) => {
   const $user = document.querySelector("#text-input").value;
   const $password = document.querySelector("#password-input").value;
 
-  if ($user == admin.usuario && $password == admin.contrasenna) {
-    console.log("entro al if");
+  if ($user == admin.user && $password == admin.password) {
     window.location.href = "admin.html";
   } else {
     alert("Su usuario y contraseña son incorrectos");
