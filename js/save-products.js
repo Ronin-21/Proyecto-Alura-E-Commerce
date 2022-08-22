@@ -1,4 +1,4 @@
 /* SAVE LOCAL STORAGE */
-export const saveLocalStorage = (products) => {
-  localStorage.setItem("productos", JSON.stringify(products));
+export const saveLocalStorage = (key, value) => {
+  localStorage.setItem(`${key}`, JSON.stringify(value));
 };

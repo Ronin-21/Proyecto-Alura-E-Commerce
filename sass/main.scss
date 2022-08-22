@@ -54,9 +54,10 @@ $font-family-code: "Bebas Neue", cursive;
 
 .search__form {
   position: relative;
+  width: 25rem;
 
   .search__bar {
-    width: 20rem;
+    width: 100%;
   }
 
   .search__icon {
@@ -75,6 +76,7 @@ $font-family-code: "Bebas Neue", cursive;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 1rem;
 }
 
 .home-banner1 {
@@ -186,6 +188,20 @@ $font-family-code: "Bebas Neue", cursive;
 }
 
 /* ------------------------ */
+@media screen and (min-width: 360px) {
+  .banner-offer {
+    display: none;
+  }
+}
+@media screen and (max-width: 765px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 50%;
+  }
+  .search__form {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .card-central img {
     height: 190px;

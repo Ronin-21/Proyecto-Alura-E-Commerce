@@ -61,10 +61,10 @@
     <main class="flex-grow-1 bg-secondary">
       <!-- FORM SECTION -->
       <section id="contacto" class="contact__section py-5">
-        <h2 class="h1 fw-bold text-center mb-5">Agregar nuevo producto</h2>
+        <h2 class="h1 fw-bold text-center mb-5">Editar producto</h2>
         <!-- FORM -->
         <div class="form-contact__container w-50 p-5 pb-3 mx-auto rounded-4 shadow bg-white">
-            <form class="mb-3" id="admin-form">
+            <form class="mb-3" id="edit-form">
               <label for="text-input" class="form-label mt-2">Categoría</label>
               <input type="text" class="form-control" id="categoria-input" placeholder="Categoría del producto">
               <label for="text-input" class="form-label mt-2">Nombre</label>
@@ -73,7 +73,7 @@
               <input type="text" class="form-control" id="precio-input" placeholder="Precio del producto">
               <label for="file-input" class="form-label mt-2">Seleccione las imágenes</label>
               <input class="form-control" type="file" id="file-input" accept=".jpg,.png,.webp">
-              <button type="submit" class="btn btn-primary mt-3 mx-auto">Agregar producto</button>
+              <button type="submit" class="btn btn-primary mt-3 mx-auto">Editar</button>
               <button class="btn btn-primary mt-3 mx-auto"><a href="./admin.html" class="text-black text-decoration-none">Volver</a></button>
             </form>
         </div>
@@ -99,8 +99,7 @@
     </footer>
     <!-- END FOOTER -->
     <!-- SCRIPTS -->
-    <script src="./js/create-product.js" type="module"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/edit-product.js" type="module"></script>
     <!-- END SCRIPTS -->
   </body>
 </html>

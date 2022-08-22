@@ -12,10 +12,11 @@ hamburgerSpin();
 /* CREATE PRODUCT */
 const createProduct = (category, name, price, img) => {
   let product = {
-    category: category,
-    name: name,
-    price: price,
-    img: img,
+    id: uuid.v4(),
+    category,
+    name,
+    price,
+    img,
   };
 
   if (products == null) {
@@ -34,6 +35,6 @@ $adminForm.addEventListener("submit", (e) => {
   const $productPrice = document.querySelector("#precio-input").value;
 
   createProduct($productCategory, $productName, $productPrice, fileSource);
-  saveLocalStorage(products);
+  saveLocalStorage("productos", products);
   $adminForm.reset();
 });
