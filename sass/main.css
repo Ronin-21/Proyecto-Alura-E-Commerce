@@ -10924,7 +10924,7 @@ textarea.form-control-lg {
   }
 }
 /* ------------------- */
-.login__body {
+.body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11100,6 +11100,17 @@ textarea.form-control-lg {
   .banner-offer {
     display: none;
   }
+  .form-login__container {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-login__container {
+    width: 75%;
+  }
+  .admin__container {
+    width: 95%;
+  }
 }
 @media screen and (max-width: 765px) {
   .carousel-control-prev,
@@ -11114,9 +11125,21 @@ textarea.form-control-lg {
   .card-central img {
     height: 190px;
   }
+  .form-login__container {
+    width: 50%;
+  }
+  .admin__container {
+    width: 75%;
+  }
 }
 @media screen and (min-width: 1440px) {
   .card-central img {
     height: 275px;
+  }
+  .form-login__container {
+    width: 30%;
+  }
+  .admin__container {
+    width: 50%;
   }
 }/*# sourceMappingURL=main.css.map */
